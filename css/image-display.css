@@ -41,25 +41,25 @@ a:hover{
 
 /* menu styling start */
 section{
+    padding: 20px;
     margin: 80px 150px;
+    border:2px solid #711111;
 }
 section img{
-    width: 100%;
+    width: 100%; /* output image width is section width */
 }
 .section-heading{
     padding: 20px;
     color: #035c5c;
     text-transform: uppercase;
     text-align: center;
-    border:2px solid #711111;
+    /* border:2px solid #711111; */
 }
-
-
 .img-row{
-    height: 400px;
-    display: flex;
-    gap: 10px;
-    margin: 10px 0px;
+    height: 220px; /* each row takes this height */
+    display: flex; /* to show in one row */
+    gap: 10px; /* works as flex gap */
+    margin: 10px 0px; /* for row gap */
 }
 .img-row>div{
     flex: 1; 
@@ -75,7 +75,8 @@ section img{
     display: flex;
     flex-direction: row; */
     height: 50%;
-    /* height: calc((100%-10px)/2); */ /*not working */
+    /* height: calc((100%-10px)/2);  */
+    /*not working */
     
 }
 .img-box{
@@ -86,7 +87,28 @@ section img{
     /* width: 100%; */
     /* height: fit-content; */
 }
-.img-box img{
-    /* flex: 1; */
-}
 /* menu styling end */
+/* responsive for small devices */
+@media screen and (max-width:512px){
+    a{
+        font-size: .9em;
+        margin-right: 3px;
+    }
+    section{
+        margin: 20px;
+        border: 0;
+    }
+    .img-row{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .img-vertical{
+        gap: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
