@@ -88,6 +88,17 @@ section img{
     /* height: fit-content; */
 }
 /* menu styling end */
+/* responsive medium screen */
+@media screen and (max-width:768px) {
+    section{
+        margin: 30px;
+    }
+    .img-row{
+        flex-direction: column;
+        height: auto;
+    }
+    
+}
 /* responsive for small devices */
 @media screen and (max-width:512px){
     a{
