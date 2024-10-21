@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Area</title>
+    <link rel="stylesheet" href="../css/grid-style.css">
+</head>
+<body class="body">
+    <!-- header.header>h1.title{Header} -->
+    <header class="header">
+        <h1 class="title">Header</h1>
+    </header>
+    <!-- nav.nav>ul>li*3>a{nav$} -->
+    <nav class="nav">
+        <ul>
+            <li><a href="">nav1</a></li>
+            <li><a href="">nav2</a></li>
+            <li><a href="">nav3</a></li>
+        </ul>
+    </nav>
+    <!-- main.main>article*2>h1{main article$}+p>lorem -->
+    <main class="main">
+        <article>
+            <h1>main article1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti, consequuntur in modi animi asperiores, sapiente quos tenetur quam quibusdam architecto eos dolorem distinctio ducimus non. Ducimus molestiae non quisquam?</p>
+        </article>
+        <article>
+            <h1>main article2</h1>
+            <p>Possimus, numquam fugiat. Sed quasi animi vel ullam totam aperiam repellendus dolorum maiores ipsa, assumenda cupiditate voluptatem, nulla eligendi eveniet dolorem. Iusto ex voluptas quia quos ad veritatis possimus nulla!</p>
+        </article>
+    </main>
+    <!-- aside>.sidebar>h1{Sidebar}^.advertisement>h1{Advertisement} -->
+    <aside>
+        <div class="sidebar">
+            <h1>Sidebar</h1>
+        </div>
+        <div class="advertisement">
+            <h1>Advertisement</h1>
+        </div>
+    </aside>
+    <!-- footer.footer>h1{Footer} -->
+    <footer class="footer">
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

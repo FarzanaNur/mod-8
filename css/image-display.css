@@ -87,6 +87,33 @@ section img{
     /* width: 100%; */
     /* height: fit-content; */
 }
+.box-container{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,50px);
+    /* width: 500px; */
+    
+}
+.box{
+    background-color: #035c5c;   
+}
+#box-1{
+    grid-row: span 5;
+}
+#box-6,#box-7,#box-9,#box-10{
+    background-color: #deb887;
+}
+
+#box-11,#box-12{
+    grid-column: span 3;
+}
+
+.grid-heading a{
+    font-size: .9em;
+    font-weight: 900;
+    color: #035c5c;
+}
 /* menu styling end */
 /* responsive medium screen */
 @media screen and (max-width:768px) {
