@@ -15,6 +15,16 @@
 .nav{
     grid-area: nav;
 }
+ul li{
+    list-style: none;
+}
+li a{
+    color: brown;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* gap: 40px; */
+}
 .footer{
     grid-area: footer;
 }
@@ -28,6 +38,8 @@
     grid-area: advertisement;
 }
 .body{
+    /* margin: 100px 50px; */
+    /* border: 2px solid brown; */
     display: grid;
     grid-template-areas:
     "header header header header"
@@ -37,4 +49,31 @@
     ;
     gap: 10px;
     padding: 20px; 
+}
+h1{
+    text-transform: capitalize;
+}
+/* responsive small*/
+@media screen and (max-width:512px) {
+    .body{
+        grid-template-areas:
+        "header"
+        "nav "
+        "sidebar"
+        "advertisement"
+        "main"
+        "footer "
+        ;  
+    }
+}
+/* responsive medium*/
+@media screen and (min-width:512px) and (max-width:992px) {
+    .body{
+        grid-template-areas:
+        "header header header"
+        "nav nav nav "
+        "sidebar main main"
+        "advertisement footer footer"
+        ;  
+    }
 }
