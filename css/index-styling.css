@@ -50,7 +50,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: bisque;
 }
 main>a{
@@ -60,10 +60,10 @@ main>a{
     margin-right: 30px;
 }
 main>a:hover{
-    color: bisque;
+    color: rgb(1, 14, 70);
     padding: 10px;
     border-radius: 20px;
-    background-color: brown;
+    /* background-color: brown; */
 }
 @media (max-width:500px) {
     .title{
