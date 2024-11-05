@@ -74,12 +74,12 @@ section img{
     height: 100%;
     /* each img takes the same width and the height that's allocated to them */
 }
-.img-vertical img{
+.img-vertical>img{
     /* width: 50px; 
     display: flex;
     flex-direction: row; */
-    height: 50%;
-    /* height: calc((100%-10px)/2);  */
+    height: 49%;
+    /* height: calc(50%-5px); */
     /*not working */
     
 }
