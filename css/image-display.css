@@ -5,8 +5,9 @@
     /* text-align: center; */
 }
 /* header styling start */
+/* top heading */
 .heading{
-    color: #035c5c;
+    color: #013333;
     background-color: bisque;
     font-size: 1.3em;
     font-style: italic;
@@ -55,6 +56,8 @@ section img{
     text-align: center;
     /* border:2px solid #711111; */
 }
+
+/* image section styling start */
 .img-row{
     height: 220px; /* each row takes this height */
     display: flex; /* to show in one row */
@@ -69,6 +72,7 @@ section img{
 .img-row img{
     width: 100%;
     height: 100%;
+    /* each img takes the same width and the height that's allocated to them */
 }
 .img-vertical img{
     /* width: 50px; 
@@ -87,6 +91,10 @@ section img{
     /* width: 100%; */
     /* height: fit-content; */
 }
+/* image section styling end */
+
+
+/* box section:grid-span styling start */
 .box-container{
     gap: 10px;
     display: grid;
@@ -97,10 +105,12 @@ section img{
 .box{
     text-align: center;
     background-color: #035c5c;
-    /* border-radius: 10px; */
+    /* border-radius: 10px;
+    align-items: center;
+    justify-content: center; */
 }
 #box-1{
-     grid-row: span 5; /* spans 1 row to 3 row */  
+     grid-row: span 5; /* spans 1 row to 5 row */  
 }
 #box-6,#box-7,#box-9,#box-10{
     background-color: #deb887;
@@ -108,6 +118,9 @@ section img{
 #box-11,#box-12{
     grid-column: span 3; /*spans till 3 column*/
 }
+/* box section:grid-span styling end */
+
+/* grid-area section styling start */
 .grid-heading a{
     font-size: .9em;
     font-weight: 900;

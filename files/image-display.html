@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMAGES</title>
-    <link rel="stylesheet" href="../css/image-display.css">
+    <!-- css linking -->
+    <link rel="stylesheet" href="../css/image-display.css"> 
+    <!-- favicon linking -->
     <link rel="shortcut icon" href="../assets/image-display/logo/logo.PNG" type="image/x-icon">
 </head>
 <body>
@@ -35,7 +37,7 @@
             <h1 class="section-heading">Display:Flexbox+Grid</h1>
             <div class="img-container">
                 <div class="img-row">
-                    <!-- <div class="img"></div> -->
+                    <!-- first row contains 3 div for 3 different image and one image is the combination of two and that's under name img-vertical div -->
                     <div class="img">
                         <img src="../assets/image-display/B.jpg" alt="">
                     </div>
@@ -43,6 +45,7 @@
                         <img src="../assets/image-display/C.jpg" alt="">
                     </div>
                     <div class="img-vertical img ">
+                        <!-- this one image is the combination of two under name img-vertical div -->
                         <img src="../assets/image-display/D.jpg" alt="">
                         <img src="../assets/image-display/E.jpg" alt="">
                     </div>  
@@ -53,10 +56,10 @@
                     
                 </div>
                 <div class="img-row">
-                    <!-- <div class="img"></div> -->
                     <div class="img">
                         <img src="../assets/image-display/F.jpg" alt="">
                     </div>
+                    <!-- 4 img in one div -->
                     <div class="img img-box">
                         <img src="../assets/image-display/G.jpg" alt="">
                         <img src="../assets/image-display/G.jpg" alt="">
@@ -75,7 +78,7 @@
             </h1>
             <img src="../assets/grid.png" alt="">
         </section>
-        <section class="img-display">
+        <section class="grid-span-section">
             <!-- .box-container>.box#box-${box-$}*12 -->
             <div class="box-container">
                 <div class="box" id="box-1">box-1</div>
